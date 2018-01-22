@@ -1,5 +1,5 @@
 TASKS
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Steps:
 1. Find any open source web application that you like, written in Go, Python or PHP.
 2. Implement a `Dockerfile` to dockerize this application (or use existing one).
@@ -12,10 +12,10 @@ Requirements:
 Following will be appreciated:
 - Kubernetes spec of application (in addition to `docker-compose.yaml` spec).
 - e2e tests which verify that application is running okay in dockerized environment.
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 SOLUTIONS
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 1.We have a Dockerfile, which deploy opencart-lamp(Linux, Apache2, MySQL, PHP5)
 
