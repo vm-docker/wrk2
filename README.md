@@ -43,9 +43,9 @@ You need to check permission of opencart folders. or chmod -R 777 opencart & cho
 
 a) simple test , using curl
 
-# cd test
+$ cd test
 
-# ./test.sh
+$ ./test.sh
 
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
@@ -54,21 +54,15 @@ Tests passed!
 
 b) using docker-compose.test.yml 
 
-# docker-compose -f docker-compose.test.yml -p ci up -d
+$ docker-compose -f docker-compose.test.yml -p ci build
+
+$ docker-compose -f docker-compose.test.yml -p ci up -d
 ci_redis_1 is up-to-date
 ci_mysql_1 is up-to-date
 ci_fpm_1 is up-to-date
 Starting ci_sut_1 ... done
 
-# docker-compose -f docker-compose.test.yml -p ci build
-
-# docker-compose -f docker-compose.test.yml -p ci up -d
-ci_redis_1 is up-to-date
-ci_mysql_1 is up-to-date
-ci_fpm_1 is up-to-date
-Starting ci_sut_1 ... done
-
-# docker logs -f ci_sut_1
+$ docker logs -f ci_sut_1
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100 40718    0 40718    0     0  87321      0 --:--:-- --:--:-- --:--:-- 87377
